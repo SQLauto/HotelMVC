@@ -82,3 +82,5 @@ c:\users\tommy\documents\visual studio 2015\Projects\HotelMVC\HotelMVC\obj\Debug
 c:\users\tommy\documents\visual studio 2015\Projects\HotelMVC\HotelMVC\obj\Debug\HotelMVC.pdb
 c:\users\tommy\documents\visual studio 2015\Projects\HotelMVC\HotelMVC\obj\Debug\HotelMVC.Migrations.InitialModel.resources
 c:\users\tommy\documents\visual studio 2015\Projects\HotelMVC\HotelMVC\obj\Debug\HotelMVC.csproj.GenerateResource.Cache
+c:\Users\Tommy\Documents\Visual Studio 2015\Projects\HotelMVC\HotelMVC\obj\Debug\HotelMVC.Migrations.CreateRoomTable.resources
+c:\Users\Tommy\Documents\Visual Studio 2015\Projects\HotelMVC\HotelMVC\obj\Debug\HotelMVC.Migrations.ConventionsOverrideForRoomAndAmenity.resources
