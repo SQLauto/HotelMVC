@@ -17,5 +17,9 @@ namespace HotelMVC.Models
         [Required]
         [DataType(DataType.Date)]
         public DateTime DepartureDate { get; set; }
+
+        public double Price { get; set; }
+
+        public ApplicationUser Customer { get; set; }
     }
 }

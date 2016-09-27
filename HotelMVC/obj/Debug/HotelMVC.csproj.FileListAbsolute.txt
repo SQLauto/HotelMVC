@@ -87,3 +87,11 @@ c:\Users\Tommy\Documents\Visual Studio 2015\Projects\HotelMVC\HotelMVC\obj\Debug
 C:\Users\Tommy\documents\visual studio 2015\Projects\HotelMVC\HotelMVC\obj\Debug\HotelMVC.Migrations.PopulateRoomTable.resources
 C:\Users\Tommy\documents\visual studio 2015\Projects\HotelMVC\HotelMVC\obj\Debug\HotelMVC.Migrations.PopulateAmenitiesTable.resources
 C:\Users\Tommy\documents\visual studio 2015\Projects\HotelMVC\HotelMVC\obj\Debug\HotelMVC.Migrations.AddReservationTable.resources
+C:\Users\Tommy\Documents\Visual Studio 2015\Projects\HotelMVC\HotelMVC\obj\Debug\HotelMVC.Migrations.AddedUserIdentityToReservations.resources
+C:\Users\Tommy\Documents\Visual Studio 2015\Projects\HotelMVC\HotelMVC\bin\System.Net.Http.Formatting.dll
+C:\Users\Tommy\Documents\Visual Studio 2015\Projects\HotelMVC\HotelMVC\bin\System.Web.Http.dll
+C:\Users\Tommy\Documents\Visual Studio 2015\Projects\HotelMVC\HotelMVC\bin\System.Web.Http.WebHost.dll
+C:\Users\Tommy\Documents\Visual Studio 2015\Projects\HotelMVC\HotelMVC\bin\System.Net.Http.Formatting.xml
+C:\Users\Tommy\Documents\Visual Studio 2015\Projects\HotelMVC\HotelMVC\bin\System.Web.Http.xml
+C:\Users\Tommy\Documents\Visual Studio 2015\Projects\HotelMVC\HotelMVC\bin\System.Web.Http.WebHost.xml
+C:\Users\Tommy\Documents\Visual Studio 2015\Projects\HotelMVC\HotelMVC\obj\Debug\HotelMVC.Migrations.update.resources
