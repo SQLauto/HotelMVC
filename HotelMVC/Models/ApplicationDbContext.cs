@@ -7,6 +7,7 @@ namespace HotelMVC.Models
     {
         public DbSet<Rooms> Rooms { get; set; }
         public DbSet<Amenities> Amenities { get; set; }
+        public DbSet<Reservations> Reservations { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)

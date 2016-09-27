@@ -221,12 +221,17 @@
     <Compile Include="Migrations\201609270636574_PopulateAmenitiesTable.Designer.cs">
       <DependentUpon>201609270636574_PopulateAmenitiesTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609270656071_AddReservationTable.cs" />
+    <Compile Include="Migrations\201609270656071_AddReservationTable.Designer.cs">
+      <DependentUpon>201609270656071_AddReservationTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Amenities.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Reservations.cs" />
     <Compile Include="Models\Rooms.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -318,6 +323,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201609270636574_PopulateAmenitiesTable.resx">
       <DependentUpon>201609270636574_PopulateAmenitiesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609270656071_AddReservationTable.resx">
+      <DependentUpon>201609270656071_AddReservationTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
