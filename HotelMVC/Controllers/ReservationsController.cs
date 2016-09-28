@@ -28,6 +28,7 @@ namespace HotelMVC.Controllers
 
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(ReservationFormViewModel viewModel)
         {
             if (!ModelState.IsValid)
