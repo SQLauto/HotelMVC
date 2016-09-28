@@ -9,10 +9,12 @@ namespace HotelMVC.ViewModels
     {
         [Required]
         [DataType(DataType.Date)]
+        [FutureDate]
         public DateTime ArrivalDate { get; set; }
 
         [Required]
         [DataType(DataType.Date)]
+        [FutureDate]
         public DateTime DepartureDate { get; set; }
 
         [Required]

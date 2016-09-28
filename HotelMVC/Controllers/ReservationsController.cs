@@ -31,7 +31,10 @@ namespace HotelMVC.Controllers
         public ActionResult Create(ReservationFormViewModel viewModel)
         {
             if (!ModelState.IsValid)
+            {
+                viewModel.Rooms = _context.Rooms.ToList();
                 return View("Create", viewModel);
+            }
 
             var price = 50.00;
 

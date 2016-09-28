@@ -12,7 +12,7 @@
         <!--may need to change to room-->
         <div class="form-group">
             @Html.LabelFor(m => m.Rooms)
-            @Html.DropDownListFor(m => m.Room, new SelectList(Model.Rooms, "Id", "Name"), "", new { @class = "form-control" })))
+            @Html.DropDownListFor(m => m.Room, new SelectList(Model.Rooms, "Id", "Name"), "", new { @class = "form-control" })
             @Html.ValidationMessageFor(m => m.Room)
         </div>
         <div class="form-group">
@@ -27,6 +27,11 @@
         </div>
         <button type="submit" value="Save" class="btn btn-primary">Submit</button>
     </form>
+}
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
 }
 
 
