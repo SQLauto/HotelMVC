@@ -1,0 +1,32 @@
+﻿@model HotelMVC.ViewModels.ReservationFormViewModel
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Reserve a Room</h2>
+
+@using (Html.BeginForm("Create", "Reservations"))
+{
+    <form>
+        <!--may need to change to room-->
+        <div class="form-group">
+            @Html.LabelFor(m => m.Rooms)
+            @Html.DropDownListFor(m => m.Room, new SelectList(Model.Rooms, "Id", "Name"), "", new { @class = "form-control" })))
+            @Html.ValidationMessageFor(m => m.Room)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.ArrivalDate)
+            @Html.TextBoxFor(m => m.ArrivalDate, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.ArrivalDate)
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.DepartureDate)
+            @Html.TextBoxFor(m => m.DepartureDate, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.DepartureDate)
+        </div>
+        <button type="submit" value="Save" class="btn btn-primary">Submit</button>
+    </form>
+}
+
+

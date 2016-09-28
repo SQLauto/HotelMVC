@@ -15,6 +15,8 @@ namespace HotelMVC.Models
         public double Price { get; set; }
 
         [Required]
-        public List<Amenities> Amenities { get; set; }
+        public ICollection<Amenities> Amenities { get; set; }
+
+        public ICollection<Reservations> Reservations { get; set; }
     }
 }

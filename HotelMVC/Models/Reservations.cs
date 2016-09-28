@@ -7,8 +7,10 @@ namespace HotelMVC.Models
     {
         public int Id { get; set; }
 
-        [Required]
         public Rooms Room { get; set; }
+
+        [Required]
+        public byte RoomId { get; set; }
 
         [Required]
         [DataType(DataType.Date)]
@@ -21,5 +23,8 @@ namespace HotelMVC.Models
         public double Price { get; set; }
 
         public ApplicationUser Customer { get; set; }
+
+        [Required]
+        public string CustomerId { get; set; }
     }
 }

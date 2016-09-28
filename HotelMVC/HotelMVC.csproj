@@ -216,37 +216,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201609270422264_InitialModel.cs" />
-    <Compile Include="Migrations\201609270422264_InitialModel.Designer.cs">
-      <DependentUpon>201609270422264_InitialModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609270509182_CreateRoomTable.cs" />
-    <Compile Include="Migrations\201609270509182_CreateRoomTable.Designer.cs">
-      <DependentUpon>201609270509182_CreateRoomTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609270538278_ConventionsOverrideForRoomAndAmenity.cs" />
-    <Compile Include="Migrations\201609270538278_ConventionsOverrideForRoomAndAmenity.Designer.cs">
-      <DependentUpon>201609270538278_ConventionsOverrideForRoomAndAmenity.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609270611161_PopulateRoomTable.cs" />
-    <Compile Include="Migrations\201609270611161_PopulateRoomTable.Designer.cs">
-      <DependentUpon>201609270611161_PopulateRoomTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609270636574_PopulateAmenitiesTable.cs" />
-    <Compile Include="Migrations\201609270636574_PopulateAmenitiesTable.Designer.cs">
-      <DependentUpon>201609270636574_PopulateAmenitiesTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609270656071_AddReservationTable.cs" />
-    <Compile Include="Migrations\201609270656071_AddReservationTable.Designer.cs">
-      <DependentUpon>201609270656071_AddReservationTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609271659473_AddedUserIdentityToReservations.cs" />
-    <Compile Include="Migrations\201609271659473_AddedUserIdentityToReservations.Designer.cs">
-      <DependentUpon>201609271659473_AddedUserIdentityToReservations.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609271718207_update.cs" />
-    <Compile Include="Migrations\201609271718207_update.Designer.cs">
-      <DependentUpon>201609271718207_update.cs</DependentUpon>
+    <Compile Include="Migrations\201609280435126_Initial.cs" />
+    <Compile Include="Migrations\201609280435126_Initial.Designer.cs">
+      <DependentUpon>201609280435126_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -258,6 +230,7 @@
     <Compile Include="Models\Rooms.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\ReservationFormViewModel.cs" />
     <Compile Include="ViewModels\ReservationViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -321,10 +294,11 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Rooms\List.cshtml" />
-    <Content Include="Views\Reservations\View.cshtml" />
+    <Content Include="Views\Reservations\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="obj\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -335,29 +309,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201609270422264_InitialModel.resx">
-      <DependentUpon>201609270422264_InitialModel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609270509182_CreateRoomTable.resx">
-      <DependentUpon>201609270509182_CreateRoomTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609270538278_ConventionsOverrideForRoomAndAmenity.resx">
-      <DependentUpon>201609270538278_ConventionsOverrideForRoomAndAmenity.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609270611161_PopulateRoomTable.resx">
-      <DependentUpon>201609270611161_PopulateRoomTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609270636574_PopulateAmenitiesTable.resx">
-      <DependentUpon>201609270636574_PopulateAmenitiesTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609270656071_AddReservationTable.resx">
-      <DependentUpon>201609270656071_AddReservationTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609271659473_AddedUserIdentityToReservations.resx">
-      <DependentUpon>201609271659473_AddedUserIdentityToReservations.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609271718207_update.resx">
-      <DependentUpon>201609271718207_update.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201609280435126_Initial.resx">
+      <DependentUpon>201609280435126_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

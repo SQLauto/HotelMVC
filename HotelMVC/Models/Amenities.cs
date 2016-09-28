@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace HotelMVC.Models
 {
@@ -9,5 +10,7 @@ namespace HotelMVC.Models
         public string Name { get; set; }
 
         public int Id { get; set; }
+
+        public ICollection<Rooms> Rooms { get; set; }
     }
 }
