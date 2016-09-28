@@ -8,11 +8,11 @@
 
 @using (Html.BeginForm("Create", "Reservations"))
 {
-
+    <p class="alert alert-warning">Every field is <strong>required</strong>.</p>
     @Html.AntiForgeryToken()
     <div class="form-group">
         @Html.LabelFor(m => m.Rooms)
-        @Html.DropDownListFor(m => m.Room, new SelectList(Model.Rooms, "Id", "Name"), "", new { @class = "form-control" })
+        @Html.DropDownListFor(m => m.Room, new SelectList(Model.Rooms, "Id", "Name"), "", new { @class = "form-control", autofocus = "autofocus" })
         @Html.ValidationMessageFor(m => m.Room)
     </div>
     <div class="form-group">

@@ -1,16 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using HotelMVC.Models;
 using System.Web.Mvc;
 
 namespace HotelMVC.Controllers
 {
     public class HomeController : Controller
     {
+        private ApplicationDbContext _context;
+
+        public HomeController()
+        {
+            _context = new ApplicationDbContext();
+        }
         public ActionResult Index()
         {
-            return View();
+            var amenities = _context.Amenities;
+
+            return View(amenities);
         }
 
         public ActionResult About()
