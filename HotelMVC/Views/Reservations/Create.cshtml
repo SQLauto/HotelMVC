@@ -8,7 +8,7 @@
 
 @using (Html.BeginForm("Create", "Reservations"))
 {
-    <p class="alert alert-warning">Every field is <strong>required</strong>.</p>
+    <p class="alert alert-info">Every field is <strong>required</strong>.</p>
     @Html.AntiForgeryToken()
     <div class="form-group">
         @Html.LabelFor(m => m.Rooms)

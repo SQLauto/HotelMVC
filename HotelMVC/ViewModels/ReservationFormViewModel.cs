@@ -8,12 +8,10 @@ namespace HotelMVC.ViewModels
     public class ReservationFormViewModel
     {
         [Required]
-        [DataType(DataType.Date)]
         [FutureDate]
         public DateTime ArrivalDate { get; set; }
 
         [Required]
-        [DataType(DataType.Date)]
         [FutureDate]
         public DateTime DepartureDate { get; set; }
 

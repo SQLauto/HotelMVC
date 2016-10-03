@@ -1,7 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: #ffbe87;
+    background-color: #fff;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -35,7 +35,7 @@ textarea {
 
 .amenities > li {
     text-align: center;
-    background-color: #ffa55b;
+    background-color: #656666;
     margin: 15px 0;
     color: #333;
     width: 200px;
@@ -44,6 +44,11 @@ textarea {
 
 span.field-validation-error { 
     color: red;
+}
+
+.jumbotron > button {
+    background-color: #656666;
+    border-color: #656666;
 }
 
 /*Bootstrap overridezz*/
@@ -60,8 +65,8 @@ div.c-wrapper {
 }
 
 .navbar-inverse {
-    background-color: #FF7706;
-    border-color: #FF7706;
+    background-color: #090A0B;
+    border-color: #090A0B;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -82,7 +87,7 @@ div.c-wrapper {
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-brand .navbar-nav > .open > a:focus {
-    background-color: rgba(210, 95, 0, 0.66);
+    background-color: rgba(40, 41, 42, 0.66);
 }
 
 .dropdown-menu { 
@@ -132,6 +137,10 @@ h6,
     padding: 8px 20px;
     -ms-border-radius: 9px;
     border-radius: 9px;
+}
+
+p > .alert > .alert-info {
+    border: none;
 }
 
 

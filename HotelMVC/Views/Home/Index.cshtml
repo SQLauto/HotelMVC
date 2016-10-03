@@ -5,12 +5,63 @@
 }
 
 <div>
-    <img id="homeImage" href="https://static.pexels.com/photos/119657/pexels-photo-119657.jpeg" alt="batezzzzz" />
+    <h1>This Is A Title For A Motel Web Application</h1>
+    <p>A small simple motel near a lake.</p>
 </div>
 
-<ul class="amenities">
-    @foreach (var amenity in Model)
-    {
-        <li>@amenity.Name</li>
-    }    
-</ul>
+<div id="roomsCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#roomsCarousel" data-slide-to="0" class=""></li>
+        <li data-target="#roomsCarousel" data-slide-to="1" class=""></li>
+        <li data-target="#roomsCarousel" data-slide-to="2" class=""></li>
+        <li data-target="#roomsCarousel" data-slide-to="3" class="active"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item">
+            <img data-src="holder.js/586x440/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="http://images.freeimages.com/images/previews/dff/hotel-room-2-1550441.jpg">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Queen sized Beds.</h1>
+                    <p>
+                        We've got queen sized beds, not kings, not twins, just queen.  BYOB, bring your own boxspring.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img data-src="holder.js/538x440/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="http://images.freeimages.com/images/previews/1b9/janitor-buggy-1203525.jpg">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Pothole ridden parking lot.</h1>
+                    <p>New tires?  Not anymore, spend five minutes in our parking lot and you'll regret the day you decided to loiter.</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img data-src="holder.js/586x440/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="http://images.freeimages.com/images/previews/afd/motel-1487080.jpg">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>We also have luxury suites.</h1>
+                    <p>It doesn't get much better than this, a run down motel in the middle of a prarie.</p>
+                </div>
+            </div>
+        </div>
+        <div class="item active">
+            <img data-src="holder.js/586x440/auto/#555:#5a5a5a/text:Fourth slide" alt="Fourth slide" src="http://images.freeimages.com/images/previews/bf1/neon-motel-sign-1196371.jpg">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>There's always a vacancy ready for the taking.</h1>
+                    <p>Don't worry, we're never at full capacity.  We cater to the stranded traveler.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#roomsCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#roomsCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+
+<div class="jumbotron">
+    <h2>Check out our availability!</h2>
+    <p>Our rooms fill up quickly during the different spawn periods. We recommend booking atleast 3 months in advance to guarantee your reservation. We cater to fisherman with our on-site fish cleaning station.</p>
+    <button class="btn btn-primary" href="/Rooms/List">View Availability</button>
+</div>
