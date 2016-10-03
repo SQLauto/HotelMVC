@@ -1,5 +1,7 @@
 # HotelMVC
 
+(10/3/16) - Multiple features will be pushed by the end of the day.
+
 MVC 5 application for a small hotel.
 
 Product Vision - 
