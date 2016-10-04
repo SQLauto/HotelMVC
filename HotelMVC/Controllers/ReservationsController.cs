@@ -1,4 +1,5 @@
-﻿using HotelMVC.Models;
+﻿using HotelMVC.Extensions;
+using HotelMVC.Models;
 using HotelMVC.ViewModels;
 using Microsoft.AspNet.Identity;
 using System.Linq;
@@ -47,6 +48,13 @@ namespace HotelMVC.Controllers
                 ArrivalDate = viewModel.GetArrivalDate(),
                 DepartureDate = viewModel.GetDepartureDate()
             };
+
+            //Check DB for conflicting reservation dates with the same room Id
+            if (_context.Reservations.Any(
+                r => r.RoomId == reservation.RoomId && 
+                reservation.ArrivalDate.IsInRange(r.ArrivalDate, r.DepartureDate) || 
+                reservation.DepartureDate.IsInRange(r.ArrivalDate, r.DepartureDate)))
+                    return View("Create", viewModel);
 
             _context.Reservations.Add(reservation);
             _context.SaveChanges();
