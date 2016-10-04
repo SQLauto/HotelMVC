@@ -1,0 +1,23 @@
+﻿@model IEnumerable<HotelMVC.Models.Reservations>
+@{
+    ViewBag.Title = "Reservations";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>My Reservations</h2>
+<ul>
+    @foreach (var reservation in Model)
+    {
+        <li>
+            <div>
+                @reservation.ArrivalDate.ToString()
+            </div>
+            <div>
+                @reservation.DepartureDate.ToString()
+            </div>
+            <div>
+                @reservation.Room.Name
+            </div>
+        </li>
+    }
+</ul>
