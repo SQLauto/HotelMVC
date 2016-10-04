@@ -9,15 +9,27 @@ namespace HotelMVC.ViewModels
     {
         [Required]
         [FutureDate]
-        public DateTime ArrivalDate { get; set; }
+        public string ArrivalDateString { get; set; }
 
         [Required]
         [FutureDate]
-        public DateTime DepartureDate { get; set; }
+        public string DepartureDateString { get; set; }
 
         [Required]
-        public byte Room { get; set; }
+        public byte RoomId { get; set; }
             
         public ICollection<Rooms> Rooms { get; set; }
+
+        public DateTime GetDepartureDate()
+        {
+            return DateTime.Parse(string.Format(DepartureDateString));
+        }
+
+        public DateTime GetArrivalDate()
+        {
+            return DateTime.Parse(string.Format(ArrivalDateString));
+        }
+
+
     }
 }

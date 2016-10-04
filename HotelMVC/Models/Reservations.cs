@@ -13,11 +13,9 @@ namespace HotelMVC.Models
         public byte RoomId { get; set; }
 
         [Required]
-        [DataType(DataType.Date)]
         public DateTime ArrivalDate { get; set; }
 
         [Required]
-        [DataType(DataType.Date)]
         public DateTime DepartureDate { get; set; }
 
         public double Price { get; set; }

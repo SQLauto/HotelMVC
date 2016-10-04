@@ -12,18 +12,18 @@
     @Html.AntiForgeryToken()
     <div class="form-group">
         @Html.LabelFor(m => m.Rooms)
-        @Html.DropDownListFor(m => m.Room, new SelectList(Model.Rooms, "Id", "Name"), "", new { @class = "form-control", autofocus = "autofocus" })
-        @Html.ValidationMessageFor(m => m.Room)
+        @Html.DropDownListFor(m => m.RoomId, new SelectList(Model.Rooms, "Id", "Name"), "", new { @class = "form-control", autofocus = "autofocus" })
+        @Html.ValidationMessageFor(m => m.RoomId)
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.ArrivalDate)
-        @Html.TextBoxFor(m => m.ArrivalDate, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.ArrivalDate)
+        @Html.LabelFor(m => m.ArrivalDateString)
+        @Html.TextBoxFor(m => m.ArrivalDateString, new { @class = "form-control", placeholder = "E.g. 2 Nov 2016" })
+        @Html.ValidationMessageFor(m => m.ArrivalDateString)
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.DepartureDate)
-        @Html.TextBoxFor(m => m.DepartureDate, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.DepartureDate)
+        @Html.LabelFor(m => m.DepartureDateString)
+        @Html.TextBoxFor(m => m.DepartureDateString, new { @class = "form-control", placeholder = "E.g. 20 Nov 2016" })
+        @Html.ValidationMessageFor(m => m.DepartureDateString)
     </div>
     <button type="submit" value="Save" class="btn btn-primary">Submit</button>
 }

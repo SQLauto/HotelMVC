@@ -42,10 +42,10 @@ namespace HotelMVC.Controllers
             var reservation = new Reservations
             {
                 CustomerId = User.Identity.GetUserId(),
-                RoomId = viewModel.Room,
+                RoomId = viewModel.RoomId,
                 Price = price,
-                ArrivalDate = viewModel.ArrivalDate,
-                DepartureDate = viewModel.DepartureDate
+                ArrivalDate = viewModel.GetArrivalDate(),
+                DepartureDate = viewModel.GetDepartureDate()
             };
 
             _context.Reservations.Add(reservation);

@@ -186,3 +186,4 @@ C:\Users\Tommy Janicik\Documents\Visual Studio 2015\Projects\HotelMVC\HotelMVC\o
 C:\Users\Tommy Janicik\Documents\Visual Studio 2015\Projects\HotelMVC\HotelMVC\obj\Debug\HotelMVC.Migrations.Initial.resources
 C:\Users\Tommy Janicik\Documents\Visual Studio 2015\Projects\HotelMVC\HotelMVC\obj\Debug\HotelMVC.csproj.GenerateResource.Cache
 C:\Users\Tommy Janicik\Documents\Visual Studio 2015\Projects\HotelMVC\HotelMVC\obj\Debug\HotelMVC.Migrations.AddNameToUsers.resources
+C:\Users\Tommy Janicik\Documents\Visual Studio 2015\Projects\HotelMVC\HotelMVC\obj\Debug\HotelMVC.Migrations.changedValidationAttributes.resources
